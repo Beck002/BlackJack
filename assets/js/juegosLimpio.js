@@ -6,8 +6,8 @@
 */
 
 let deck = [];
-const tipos =  [ 'C','D','H','S' ];
-const especiales =  [ 'A','J','Q','H' ];
+const tipos      =  ['C','D','H','S'];
+const especiales =  ['A','J','Q','K'];
 
 let puntosjugador     = 0,
     puntosComputadora = 0;
@@ -104,7 +104,7 @@ const turnoComputadora = ( puntosMinimos  ) => {
             alert('conputadora Gana')
         }
         
-    }, 100);
+    }, 200);
 }
 
 // Eventos
