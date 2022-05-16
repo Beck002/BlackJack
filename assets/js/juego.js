@@ -68,8 +68,8 @@ const miModulo = (() => {
 
     // Turno: 0 = primer jugador y el último será la computadora
     const acumularPuntos = ( carta, turno ) => {
-        puntosHTML[turno].innerText = puntosJugadores[turno];
         puntosJugadores[turno] = puntosJugadores[turno] + valorCarta( carta );
+        puntosHTML[turno].innerText = puntosJugadores[turno];
         return puntosJugadores[turno];
     }
 
@@ -148,13 +148,6 @@ const miModulo = (() => {
 
         turnoComputadora( puntosJugadores[0] );
     });
-
-    // btnNuevo.addEventListener('click', () => {
-        
-    //     inicializarJuego();
-
-    // });
-
 
     return {
         nuevoJuego: inicializarJuego
